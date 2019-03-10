@@ -55,9 +55,19 @@ Multi-line editing
 - `command+shift+l`
 - `command+left_arrow or right_arrow`
 
-2.1 lkfdb hi    jhkg
-2.1 adb hi      fnb
-2.1 aba hi      f 
-2.1 afbdsa hi   adfavs
-2.1 abdsavsv hi avdsv
+1. `kfdb`
+    - hi jhkg
+2. `adb`
+    - hi fnb
+3. `aba`
+    - hi f 
+4. `afbdsa`
+    - hi adfavs
+5. `abdsavsv`
+    - hi avdsv
 
+|name|shoe size|
+|---|---|
+| khvkeh | uygqugvqe |
+| qhvgveq | qkjvhglvehb |
+| egerquogyvv | ehggv |
