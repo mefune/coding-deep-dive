@@ -37,7 +37,7 @@ order by col_1
 ```
 Here is an image: (always leave a blank line under an image)
 
-![](leah.png)
+![](images/leah.png)
 
 ---
 
@@ -45,8 +45,19 @@ Here is an image: (always leave a blank line under an image)
 
 Here is a table: (command + shift + p (insert table))
 
-|  Name |  City | DOB |
-|---|---|---|
-| Baruch  | Hove  | 01/01/01 |
-| Mendy | Brighton | 02/02/02 |
+|---|---|  Name |  City | DOB|---|
+|---|---|---|---|---|---|
+|---|---| Baruch  | Hove  | 01/01/01 |---|
+|---|---| Mendy | Brighton | 02/02/02 |---|
+
+Multi-line editing 
+- `sift+select lines`
+- `command+shift+l`
+- `command+left_arrow or right_arrow`
+
+2.1 lkfdb hi    jhkg
+2.1 adb hi      fnb
+2.1 aba hi      f 
+2.1 afbdsa hi   adfavs
+2.1 abdsavsv hi avdsv
 
