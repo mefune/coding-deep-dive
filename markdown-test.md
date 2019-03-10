@@ -1,5 +1,7 @@
 # B"H
 
+(command + shit + p (preview))
+
 ## This is slightly smaller
 
 ## This is even smaller
@@ -41,5 +43,10 @@ Here is an image: (always leave a blank line under an image)
 
 [My GitHub Repository](https://github.com/mefune/coding-deep-dive)
 
+Here is a table: (command + shift + p (insert table))
 
+|  Name |  City | DOB |
+|---|---|---|
+| Baruch  | Hove  | 01/01/01 |
+| Mendy | Brighton | 02/02/02 |
 
