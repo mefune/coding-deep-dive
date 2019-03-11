@@ -22,6 +22,8 @@ This is normal text with a list:
 This numbered list:
 1. House
 2. Car
+
+-- --------------------------------------------------------------------------------
 ---
 This following word is in **bold** *ilalics* ***bold ilatics***
 
@@ -67,7 +69,7 @@ Multi-line editing
     - hi avdsv
 
 |name|shoe size|
-|---|---|
-| khvkeh | uygqugvqe |
-| qhvgveq | qkjvhglvehb |
-| egerquogyvv | ehggv |
+|---|---|  
+|1| one|
+|1| one|
+|2| two|
