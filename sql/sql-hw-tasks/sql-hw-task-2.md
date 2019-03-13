@@ -6,7 +6,7 @@
     - state abbreviation
     - 1st charachter of state name 
 - Order the results by the 3rd charachter of the state name
-- Only show records where 3rd charachter of state name is eiter a, e, i, o , u    
+- Only show records where 3rd charachter of state name is either a, e, i, o , u    
 
 # Answer:
 Form Baruch
