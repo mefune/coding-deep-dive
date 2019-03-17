@@ -1,33 +1,6 @@
--- B''H --
-
-# Task: 7
-
-[Link to Task:](https://github.com/Ylazerson/coding-deep-dive/blob/master/sql/sql-hw-tasks/sql-assignments/sql-task-007.md)
-
-- Try to do one (and only one) "step" column in each with statement
-- That you can slowly build up the solution
-- Each "step" column is based on prior "step" column(s)
-- If you get blocked and can't solve a certain "step" column, take a peek at sql-task-007.sql
-- This is a real business-need SQL puzzle, so don't be surprised if it takes you a few days or more
-
-### Tips:
-
-The following SQL "tools" might help:
-
-- `with` statement
-- `case` statement
-- `substr` function
-- `lower` function
-- `strpos` function
-- `safe_cast` function
-- `cast` function
-- `replace` function
-- `trim` function
-- `concat` function
-
-### Details:
-
 ```SQL
+
+-- B''H --
 
 with step_00 as
 
@@ -86,22 +59,28 @@ step_04 as
     
 ( 
 select   *,
-         case
-             when safe_cast(step_03_str_up_to_first_colon as int64) is null 
-             then cast(step_04_str_up_to_first_colon_as_int64 as null)
-             else ''
-         end
+         safe_cast(step_03_str_up_to_first_colon as int64) step_04_str_up_to_first_colon_as_int64
          -- ---------------------------------------------
 from     step_03
-)
+),
 
+step_05 as
+
+(
 select   *,
          case
-            when safe_cast(
-                 substr(step_01_remove_mon_fri, 1,1 as int64) is null
-                 then substr(step_01_remove_mon_fri, 1, step_04_str_up_to_first_colon_as_int64)
+             when safe_cast(
+                  substr(
+                     step_03_str_up_to_first_colon, 
+                     1,
+                     1
+                    ) as int64) is null
+             then step_03_str_up_to_first_colon
              else ''
          end step_05_times_prefix
+         -- ---------------------------------------------
 from     step_04
-         
-```
+)
+
+select  *
+from    step_05
