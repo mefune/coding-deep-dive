@@ -1,5 +1,6 @@
 # B"H
 
+
 (command + shit + p (preview))
 
 ## This is slightly smaller
@@ -68,8 +69,8 @@ Multi-line editing
 5. `abdsavsv`
     - hi avdsv
 
-|name|shoe size|
-|---|---|  
-|1| one|
-|1| one|
-|2| two|
+ |name|shoe size|
+ |---|---|  
+ |1| one|
+ |1| one|
+ |2| two|
