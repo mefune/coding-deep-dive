@@ -17,5 +17,3 @@ from     `xyz`
 |new_name_1|new_name_2|
 |---|---|
 | NA | NA |
-| NA | NA |
-| NA | NA |

@@ -1,6 +1,6 @@
 -- B''H --
 
-# DataTypes:
+# Data Types:
 
 -
 

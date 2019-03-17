@@ -1,7 +1,33 @@
 -- B''H --
 
+1. Select all lines starting with `x`
+2. Select all lines ending with `x`
+3. Select all lines that have `x` in them
+4. Select all lines from after `x` (x2 parts)
 
-## Example: 
+Multiples:
+
+5. Select: 
+   - string we're going to disect `x`, 
+   - position to start from `y`, 
+   - how many charachters to go for `z` 
+6. Select: 
+   - string we're going to disect `x`, 
+   - position to start from `y`, 
+   - how many charachters to go for `z`
+     - *start*, 
+     - *end*, 
+     - *that contain* `xyz`,
+     - *position*
+7. Select:
+   - string we're going to disect `x`, 
+   - position to start from `y`, 
+     - substr
+
+
+
+
+## Example 1: 
 ### *Code:*
 
 ```SQL

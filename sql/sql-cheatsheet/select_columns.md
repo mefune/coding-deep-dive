@@ -1,5 +1,19 @@
 -- B''H --
 
+1. Select all columns
+2. Select column `x`
+
+Multiples:
+
+3. Select: 
+   - column `x`,
+   - starting from char `y`,
+   - count `z` spaces
+
+
+
+
+
 ## Example: 
 ### *Code:*
 ```SQL
@@ -7,7 +21,7 @@
 select  column #
         column_1 col_1,
         substr(column_2, 1, 1) col_2,
-        case 
+        case column_3
              when column_3 > 0 then          -- Take everything in the column_3 until the column_3:
                   substr(
                       column_3,              -- parameter 1: string we're going to disect
