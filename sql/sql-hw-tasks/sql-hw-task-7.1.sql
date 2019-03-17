@@ -1,6 +1,5 @@
-```SQL
-
 -- B''H --
+
 
 with step_00 as
 
@@ -17,7 +16,9 @@ from     `data-science-course-226116.sql_lessons.stock_exchanges_raw_input`
          -- ---------------------------------------------
 order by 1
 ),
-         
+
+
+
 step_01 as
     
 (
@@ -27,8 +28,9 @@ select   *,
          -- ---------------------------------------------
 from     step_00     
 ),
-         -- ---------------------------------------------
-         
+
+
+
 step_02 as
     
 (
@@ -37,6 +39,8 @@ select   *,
          -- ---------------------------------------------
 from     step_01
 ),
+
+
 
 step_03 as
 
@@ -55,6 +59,8 @@ select   *,
 from     step_02
 ),
 
+
+
 step_04 as
     
 ( 
@@ -63,6 +69,8 @@ select   *,
          -- ---------------------------------------------
 from     step_03
 ),
+
+
 
 step_05 as
 
@@ -80,7 +88,31 @@ select   *,
          end step_05_times_prefix
          -- ---------------------------------------------
 from     step_04
+),
+
+
+
+step_06 as
+
+(
+select  *,
+        replace(step_01_remove_mon_fri,
+                concat(step_05_times_prefix),
+                ''
+               ) step_06_remove_times_prefix
+        -- ---------------------------------------------
+from    step_05
+),
+
+
+
+step_07 as
+
+(
+select  *,
+        replace(step_06_remove_times_prefix, ' - ', '-') step_07_replace_blank_dash_blank
+from    step_06
 )
 
 select  *
-from    step_05
+from    step_07
