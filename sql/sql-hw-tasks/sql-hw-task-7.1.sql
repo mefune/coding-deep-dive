@@ -25,8 +25,8 @@ step_01 as
 select   *,
          trim
             (replace(field_6, 
-                      'Monday - Friday:', 
-                      ''
+                     'Monday - Friday:', 
+                     ''
                     )
             ) step_01_remove_mon_fri
          -- ---------------------------------------------
@@ -70,9 +70,14 @@ from     step_02
 step_04 as
     
 ( 
-select   *,
+select   *, 
          safe_cast(step_03_str_up_to_first_colon as int64
                   ) step_04_str_up_to_first_colon_as_int64
+       --  case 
+         --    when (step_03_str_up_to_first_colon as int64) is null 
+         --    then step_03_str_up_to_first_colon
+         --    else null
+         --    end step_05_times_prefix
          -- ---------------------------------------------
 from     step_03
 ),
@@ -85,11 +90,11 @@ step_05 as
 select   *,
          case
              when safe_cast(
-                substr(
-                     step_03_str_up_to_first_colon, 
-                     1,
-                     1
-                     ) as int64) is null
+                  substr(
+                         step_03_str_up_to_first_colon, 
+                         1,
+                         1
+                        ) as int64) is null
              then step_03_str_up_to_first_colon
              else ''
          end step_05_times_prefix
