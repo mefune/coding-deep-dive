@@ -1,7 +1,7 @@
 -- B''H -- 
 
 
-## Task: 9
+# Task: 9
 
 
 - Use the `data-science-course-226116.sql_lessons.group_by_sandbox`  table

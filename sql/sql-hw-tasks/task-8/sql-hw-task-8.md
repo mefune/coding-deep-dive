@@ -1,13 +1,12 @@
 -- B''H --
 
-## Task: 8
+# Task: 8
 
-- Use the `data-science-course-226116.sql_lessons.group_by_sandbox`  table
-
-- For all records which have more than 2 impressions get me the avergage cost per account
-
-- Final columns should have account, avg_cost_per_account, sum_cost
-
+- For all records which have more than 2 impressions - the avergage cost per account
+- Final columns should have 
+  - account
+  - avg_cost_per_account
+  - sum_cost
 - Only include accounts where their avergage cost per account is greater than 4 dollars
 
 ## Output should look like:
@@ -21,6 +20,12 @@
 |Buena Vista Optometry|7.56|7.56|
 
 # Details: 
+```SQL
+
+select   *
+from     `data-science-course-226116.sql_lessons.group_by_sandbox` 
+
+```
 
 # Answer:
 
