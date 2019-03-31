@@ -3,9 +3,8 @@
 
 # Task: 11
 
----
 
-- Use the `data-science-course-226116.sql_lessons.group_by_sandbox`  table
+- from `data-science-course-226116.sql_lessons.group_by_sandbox`  table
 
 ---
 
