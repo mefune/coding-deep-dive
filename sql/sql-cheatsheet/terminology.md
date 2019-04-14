@@ -3,3 +3,5 @@
 ### Grain level
 
 - 
+
+CTE = Common Table Expression
