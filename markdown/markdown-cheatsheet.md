@@ -57,6 +57,7 @@ Multi-line editing
 - `sift+select lines`
 - `command+shift+l`
 - `command+left_arrow or right_arrow`
+- `command+d` select all words alike
 
 1. `kfdb`
     - hi jhkg
